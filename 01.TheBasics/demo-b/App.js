@@ -38,8 +38,8 @@ export default function App() {
         solution for that is using FlatList component
       */}
       <ScrollView>
-        {items.map((i) => (
-          <View key={i} style={styles.listItem}>
+        {items.map((i, idx) => (
+          <View key={idx} style={styles.listItem}>
             <Text>{i}</Text>
           </View>
         ))}
